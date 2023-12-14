@@ -1,0 +1,151 @@
+.screen.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+    /* touch-action: none; */
+    background: #80808000;
+    /* для проверки */
+
+}
+
+.screen.white_back::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    z-index: -2;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.loadPage {
+    background: url("img/pic.png") 100% 0% / 100% 80% no-repeat;
+    color: #443125;
+}
+
+.loadPage h1 {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.loadPage p {
+    font-size: 16px;
+    margin: 12px;
+}
+
+.loadPage .load {
+    min-height: 278px;
+
+    width: 100%;
+    background-color: #ffffff;
+
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+
+}
+
+.loadPage .load_head {
+    width: 50px;
+    height: 5px;
+    border-radius: 30px;
+    background: #F4F4F4;
+    margin: 15px auto 27px;
+}
+
+.progressbar {
+    margin: 0 auto 40px;
+    width: 75%;
+    height: 8px;
+
+    border-radius: 20px;
+    background: #C5B6A3;
+
+
+}
+
+
+.progressbar #progressLine {
+    width: 50%;
+    height: 100%;
+    background-color: #443125;
+    border-radius: 20px;
+}
+
+#percent {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 26px auto 14px;
+}
+
+.container_photo {
+    width: 350px;
+    height: 586px;
+    position: fixed;
+    left: calc(50% - (350px / 2));
+    top: calc(45% - (586px / 2));
+}
+
+.photo {
+    width: 350px;
+    height: 525px;
+    outline: 100vh solid rgba(0, 0, 0, 0.60);
+    margin-bottom: 13px;
+    border-radius: 6px;
+}
+
+.btn_group {
+    position: fixed;
+    width: 350px;
+    display: flex;
+    justify-content: space-between
+}
+
+.btn {
+    display: flex;
+    width: 165px;
+    height: 48px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    background: #443125;
+
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--White, #FFF);
+    /* Body • Heavy */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 137.5% */
+    letter-spacing: -0.32px;
+
+}
