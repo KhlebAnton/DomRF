@@ -70,6 +70,8 @@ body {
 
 }
 
+
+
 .loadPage .load_head {
     width: 50px;
     height: 5px;
@@ -149,3 +151,62 @@ body {
     letter-spacing: -0.32px;
 
 }
+
+.landscape {
+    display: none;
+}
+.desktop {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .portrait {
+        display: none;
+    }
+    .landscape {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    .desktop .load {
+        min-height:50%;
+        text-align: start;
+        padding-left: 30px;
+    }
+    .desktop .load h1 {
+        margin-top: 20px;
+    }
+    .desktop .load p {
+        margin-left: 0;
+    }
+}
+@media screen  and (orientation: landscape ) {
+    .portrait {
+        display: none;
+    }
+    
+    .landscape {
+        display: block; 
+    }
+    .landscape .loadPage {
+        background: url("img/picLandscpae.png") 100% 0% / 100% 50% no-repeat;
+    }
+    .landscape .load {
+        min-height:50%;
+        text-align: start;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .landscape .load h1 {
+        margin-top: 20px;
+    }
+    .landscape .load p {
+        margin-left: 0;
+    }
+    .desktop {
+        display: none;
+    }
+}
+

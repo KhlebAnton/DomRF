@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="screen loadPage" onclick="toggleHidden(this)"> <!--loading page -->
+    <div class="screen landscape">
+        <div class="screen loadPage"> 
+            <div class="load">
+                <h1>Упс!</h1>
+                <p>Приложение работает только вертикально. <br>Пожалуйста, поверните экран.</p>
+            </div>
+        </div>
+    </div>
+    <div class="screen desktop">
+        <div class="screen loadPage"> 
+            <div class="load">
+                <h1>Приложение работает только<br>
+                    на мобильных телефонах</h1>
+                <p>Берите в руки свой девайс и начнем!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen loadPage portrait" onclick="toggleHidden(this)"> <!--loading page -->
         <div class="load">
             <div class="load_head"></div>
-            <h1>Loading</h1>
-            <p>Enjoy special AR game<br>created by company</p>
+            <h1>Загрузка</h1>
+            <p>Наслаждайтесь AR-контентом<br>от ДОМ.РФ</p>
             <h2 id="percent">0%</h2>
             <div class="progressbar">
                 <div id="progressLine"></div>
@@ -19,7 +37,7 @@
         </div>
     </div>
 
-    <div class="screen screen_photo hidden">
+    <div class="screen screen_photo portrait hidden">
         <div class="container_photo">
             <div class="photo"></div>
             <div class="btn_group">
